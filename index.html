@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Data Explorer</title>
+
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>API Data Explorer</h1>
+
+      <p class="author">Created & Developed by Faizan Malik</p>
+
+      <!-- Random User Generator -->
+
+      <div class="card">
+        <h2>Random User Generator</h2>
+
+        <div id="user">
+          <p class="message">Click the button to generate a random user.</p>
+        </div>
+
+        <button onclick="fetchUser()">Get Random User</button>
+      </div>
+
+      <!-- API Posts -->
+
+      <div class="card">
+        <h2>Fetch API Posts</h2>
+
+        <div class="btn-group">
+          <button onclick="getPost()">Fetch Next Post</button>
+
+          <button onclick="clearPosts()" class="clear-btn">Clear</button>
+        </div>
+
+        <div id="postContainer"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

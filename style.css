@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+
+  padding: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.container h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.author {
+  color: #cbd5e1;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.card {
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 25px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #38bdf8;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0ea5e9;
+
+  transform: translateY(-4px);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  margin-top: 10px;
+}
+
+.clear-btn {
+  background: #ef4444;
+}
+
+.clear-btn:hover {
+  background: #dc2626;
+}
+
+.message {
+  color: #cbd5e1;
+}
+
+#user {
+  margin-bottom: 20px;
+}
+
+#user img {
+  width: 130px;
+
+  border-radius: 50%;
+
+  border: 4px solid #38bdf8;
+
+  margin-bottom: 15px;
+}
+
+#user h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#user p {
+  color: #cbd5e1;
+  margin-bottom: 5px;
+}
+
+#postContainer {
+  margin-top: 20px;
+
+  max-height: 350px;
+
+  overflow-y: auto;
+}
+
+.post {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-left: 5px solid #38bdf8;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  margin-bottom: 15px;
+
+  text-align: left;
+}
+
+.post h3 {
+  color: #38bdf8;
+
+  margin-bottom: 10px;
+
+  text-transform: capitalize;
+}
+
+.post p {
+  color: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+}
